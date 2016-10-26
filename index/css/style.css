@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*初始化*/
+body, p, h1, h2, h3, h4, h5, h6, dl, dd, form, input, select { margin: 0; padding: 0; }
+body { font-family: "微软雅黑", "宋体", arial; color: #333; background-color: #fff; font-size: 16px; line-height: 30px; }
+ul, ol, li { list-style: none; margin: 0; padding: 0; border: 0px }
+input { font-family: "微软雅黑", "宋体", arial; }
+img { border: none; }
+.clearfix:after { content: "."; visibility: hidden; display: block; clear: both; height: 0; }
+.clearfix { *zoom:1;
+}
+.blank0 { height: 0px; clear: both; overflow: hidden }
+.fl { float: left }
+.fr { float: right }
+a { text-decoration: none; font-size: 16px;  color: #333; }
+a:hover { text-decoration: none; }
+a:visited { text-decoration: none; }
+
+.blue { color: #7fd9cf!important; }
+
+.bg_gray{ background-color:#f2f5fa!important;}
+.bg_gray02{ background-color:#ececec!important;}
+.bg_blue{ background-color:#07aaff!important;}
+
+.b_b_1_ec{ border-bottom:1px solid #ececec;}
+
+.m_r0 { margin-right: 0px!important;}
+
+.wrap{ width:960px; padding:0px 20px; margin:0 auto;}
+/*顶部*/
+.qj-top{ height:82px;}
+.qj-top .logo{ margin-top:16px; margin-right:75px; cursor:pointer;}
+.qj-top .nav, .qj-top .login{ margin-top:38px;}
+.qj-top .nav li, .qj-top .login li{ float:left; margin-right:78px; cursor:pointer; font-size:18px;} 
+.qj-top .login li{ margin-right:50px;}
+.qj-top .nav li a, .qj-top .login li a{ font-size:18px;}
+.qj-top li a:hover{color: #07aaff;}
+.qj-top .nav li.active a{color: #07aaff;}
+
+/*=====首页====*/
+/*banner*/
+.qj-index,.qj-intro-banner,.qj-about-banner{ position:relative; width:100%; height:540px; overflow:hidden; background-color:#fff;}
+.qj-indexbg{ position:absolute; top:0px; left:50%; width:1900px; margin-left:-950px;}
+.qj-intro-banner{ height:589px;}
+.qj-introbg{ position:absolute; top:0px; left:50%; width:1900px; height:589px; margin-left:-950px;}
+.qj-about-banner{ height:540px;}
+.qj-aboutbg{ position:absolute; top:0px; left:50%; width:1900px; height:540px; margin-left:-950px;}
+/*特点*/
+.qj-feature01{ padding:45px 0px 5px;}
+.qj-feature02{ padding:75px 0px 5px;}
+
+/*=====产品介绍页====*/
+.qj-intro{ padding:70px 0px 80px;}
+.qj-intro p{font-size:18px; line-height:31px; padding:22px 0px;}
+.qj-intro p.p1{ font-size:16px; text-indent:2em;}
+.qj-intro p span{ display:block;}
+.qj-intro p span.left{ width:580px;}
+.qj-intro p span.right{ width:350px;}
+
+/*=====关于我们页====*/
+.qj-about .title{ font-size:30px; text-align:center; padding:55px 0px;}
+.qj-about .content{font-size:16px; text-indent:2em; line-height:38px;}
+.qj-about .point{ margin:70px 0px;}
+.qj-about .point li{ float:left; width:203px; font-size: 30px; margin-right:154px; margin-left:14px; text-align:center;}
+.qj-about .point li p{ line-height:80px; }
+
+
+
+/*尾部*/
+.qj-footer{ font-size:16px; text-align:center; line-height:32px; padding:46px 0px 42px;}
