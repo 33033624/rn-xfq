@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="网信千金">
+    <meta name="description" content="网信千金">
+
+    <title>网信千金</title>
+    <style>
+        html,body{
+            width: 100%;
+        }
+        body{
+            background:rgb(242, 245, 247);
+        }
+        div,section,p,span,img{
+            margin: 0;
+            padding: 0;
+        }
+        .contain .logo{
+            display:block;
+            width:30%;
+            height:30%;
+            margin:20% auto;
+            border-radius:10%
+        }
+        .prompt{
+            width:80%;
+            margin:0 auto;
+            color:#404040;
+            font-size:18px
+        }
+        .prompt p span:nth-child(1){
+            margin-bottom: 10px;
+        }
+        .prompt p span:nth-child(2){
+            display: block;
+            margin-top: 3%;
+        }
+        .download{
+            display: block;
+            margin: 40px  auto;
+            width: 80%;
+            height: 40px;
+            background: rgb(62, 164, 245);
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+
+            text-align: center;
+            color:white;
+            outline: none;
+            line-height: 40px;
+        }
+        .alert{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            background: #000000;
+            opacity: .5;
+        }
+        .alert-img{
+            position: absolute;
+            top:3%;
+            right: 3%;
+            display: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="contain">
+    <img src="images/icon.png" alt="logo" class="logo">
+    <section class="prompt">
+        <p>
+            <span> 亲爱的用户:</span>
+            <span>我们近期推出网信千金App版,更多优惠,更多产品功能等你体验,立即下载试试吧!!</span>
+        </p>
+    </section>
+    <button class='download'>立刻下载App</button>
+
+    <section class="alert">
+
+    </section>
+    <img src="images/download.png" class="alert-img" alt="download">
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        var  _btn = document.getElementsByClassName('download')[0],
+                _alert=document.getElementsByClassName('alert')[0],
+                _alertImg=document.getElementsByClassName('alert-img')[0];
+        _btn.onclick=function(){
+            _alert.style.display='block';
+            _alertImg.style.display='block';
+            console.log(11)
+        }
+    }
+</script>
+</html>
