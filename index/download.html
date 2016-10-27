@@ -66,8 +66,8 @@
         }
         .alert-img{
             position: absolute;
-            top:3%;
-            right: 3%;
+            top:4%;
+            right: 6%;
             display: none;
             width: 80%;
             margin: 0 auto;
@@ -104,11 +104,17 @@
     window.onload = function(){
         var  _btn = document.getElementsByClassName('download')[0],
                 _alert=document.getElementsByClassName('alert')[0],
-                _alertImg=document.getElementsByClassName('alert-img')[0];
-        _btn.onclick=function(){
-            _alert.style.display='block';
-            _alertImg.style.display='block';
-            console.log(11)
+                _alertImg=document.getElementsByClassName('alert-img')[0],
+                _ua = navigator.userAgent.toLowerCase(),
+                _judge = (_ua.match(/MicroMessenger/i) == "micromessenger");
+        if(!_judge){
+            window.location.href='itms://itunes.apple.com/cn/app/wang-xin-qian-jin-xian-shang/id1157400342?mt=8';
+        }
+        else{
+            _btn.onclick=function(){
+                _alert.style.display='block';
+                    _alertImg.style.display='block';
+            }
         }
     }
 </script>
