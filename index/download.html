@@ -99,9 +99,15 @@
                 _alertImg=document.getElementsByClassName('alert-img')[0],
                 _ua = navigator.userAgent.toLowerCase(),
                 _judge = (_ua.match(/MicroMessenger/i) == "micromessenger");
+                _ios = (_ua.match(/iPhone/i) == "iPhone");
+                _android = (_ua.match(/android/i) == "android");
         _btn.onclick=function(){
                 if(!_judge){
-                    window.location.href='https://itunes.apple.com/cn/app/wang-xin-qian-jin-xian-shang/id1157400342?mt=8';
+                    if (_ios) {
+                      window.location.href='https://itunes.apple.com/cn/app/wang-xin-qian-jin-xian-shang/id1157400342?mt=8';
+                    }else{
+                      window.location.href='http://www.wandoujia.com/apps/com.xianjindai.app?utm_source=link';
+                    }
                 }else{
                     _alert.style.display='block';
                     _alertImg.style.display='block';
