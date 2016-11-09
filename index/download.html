@@ -91,6 +91,11 @@
     </section>
     <img src="images/download.png" class="alert-img" alt="download">
 </div>
+<div style="display: none">
+    <script type="text/javascript" >var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260734667'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260734667' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</div>
+
 </body>
 <script type="text/javascript">
     window.onload = function(){
@@ -99,14 +104,14 @@
                 _alertImg=document.getElementsByClassName('alert-img')[0],
                 _ua = navigator.userAgent.toLowerCase(),
                 _judge = (_ua.match(/MicroMessenger/i) == "micromessenger");
-                _ios = (_ua.match(/iPhone/i) == "iPhone");
+                _ios = (_ua.match(/iphone/i) == "iphone");
                 _android = (_ua.match(/android/i) == "android");
         _btn.onclick=function(){
                 if(!_judge){
                     if (_ios) {
                       window.location.href='https://itunes.apple.com/cn/app/wang-xin-qian-jin-xian-shang/id1157400342?mt=8';
                     }else{
-                      window.location.href='http://www.wandoujia.com/apps/com.xianjindai.app?utm_source=link';
+                      window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.xianjindai.app';
                     }
                 }else{
                     _alert.style.display='block';
