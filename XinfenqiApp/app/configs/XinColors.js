@@ -1,13 +1,34 @@
 /**
- * Created by weimeng on 16/4/20.
+ * Created by yyt on 16/12/28.
  * © 2016 NCF GROUP ALL RIGHTS RESERVED
  */
 
+//整个项目的背景色
+export const backgroundGrey = "#f2f5f7"
 
-export const borderColor = "#f1f1f1" /**  */
-export const grey = "#909090"        /**  */
-export const dark = "#333"           /**  */
-export const orange = '#ff9400'      /**  */
-export const lightGreen = "#7fd9cf"  /**  */
-export const lightGrey = "#f2f2f2"   /**  */
-export const xLightGrey = '#f5f5f5'  /**  */
+//项目主色调蓝色、导航条色
+export const mainBule = "#3ea4f5"
+
+//整个项目的分割线
+export const borderColor = "#dcdedf"
+
+//整个项目绿色text
+export const textGreen = '#63ba6d'
+
+//整个项目橘色text
+export const textOrange = '#ff8d27'
+
+//注册 '我已阅读并同意'、'未登录'
+export const commonText = "#666666"
+
+//一般Form左边、//个人中心Form右边text的颜色
+export const formLeftText = '#333333'
+
+//一般Form右边、//注册、登录FromText颜色
+export const formRightText = '#999999'
+
+//个人资料中的‘身份信息’、'银行卡信息'
+export const userInfoTitleGrey = '#9e9e9e'
+
+//关于我们版本号颜色
+export const aboutUsVersionText = '#aeaeae'
