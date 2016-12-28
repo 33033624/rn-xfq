@@ -1,4 +1,4 @@
-# 插件
+# 插件:
 
 1. 路由
 	react-native-router-flux: https://github.com/aksonov/react-native-router-flux
@@ -7,7 +7,11 @@
 3. 本地存储
 	react-native-storage: https://github.com/sunnylqm/react-native-storage
 4. button, ButtonGroup， 侧滑菜单，radio, checkbox, list, Tabs等基础组件：
-	react-native-elements: https://github.com/react-native-community/react-native-elements
+	react-native-elements:
+	https://github.com/react-native-community/react-native-elements
+5. 矢量图标
+	react-native-vector-icons:
+	https://github.com/oblador/react-native-vector-icons
 
 # 自定义组件:
 
