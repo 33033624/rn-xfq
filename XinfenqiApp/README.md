@@ -10,9 +10,12 @@
 
 
 自定义组件:
-	tip: Modal
-	协议: Modal
-	button: react-native-elements
+	tip:
+		Modal
+	协议:
+		Modal
+	button:
+		react-native-elements
 
 
 
