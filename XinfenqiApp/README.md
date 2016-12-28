@@ -1,3 +1,5 @@
+# 插件
+
 1. 路由
 	react-native-router-flux: https://github.com/aksonov/react-native-router-flux
 2. 可滑动tab效果
@@ -7,19 +9,18 @@
 4. button, ButtonGroup， 侧滑菜单，radio, checkbox, list, Tabs等基础组件：
 	react-native-elements: https://github.com/react-native-community/react-native-elements
 
+# 自定义组件:
 
-
-自定义组件:
-	tip:
+	1. tip:
 		Modal
-	协议:
+	2. 协议:
 		Modal
-	button:
+	3. button:
 		react-native-elements
 
 
 
-路由使用方式:
+# 路由使用方式:
 React-Native-Router-Flux:
 
 		<<<https://github.com/aksonov/react-native-router-flux/blob/master/docs/API_CONFIGURATION.md>>>
