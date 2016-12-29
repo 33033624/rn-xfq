@@ -15,11 +15,12 @@
 
 # 自定义组件:
 
-	1. tip:
-		Modal
-	2. 协议:
-		Modal
-	3. button:
+	1. Modal:
+			 Actions.ModalContainer({modalView: Test, fillModal: false})
+			 Test: 为自定义的Page或提示框
+			 fillModal: 为是否需要全屏显示，默认不全屏，框口居中
+			 Test中: this.props.closeModal为关闭窗口
+	2. button:
 		react-native-elements
 
 

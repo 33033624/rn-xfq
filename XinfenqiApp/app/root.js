@@ -3,48 +3,15 @@
 * 页面容器，页面提供导航等页面基础配置
 */
 import React, { Component } from 'react';
+import { View, StatusBar, StyleSheet } from 'react-native';
+
 import { connect } from 'react-redux';
-import { lightGrey } from './configs/index.js'
-import {
-  View,
-  StatusBar,
-  StyleSheet
-} from 'react-native';
+import { Reducer, Actions, Router, Scene, Modal } from 'react-native-router-flux';
 
-import {
-  Reducer,
-  Router,
-  Actions,
-  Scene,
-  Modal
-} from 'react-native-router-flux';
-const reducerCreate = params => {
-   const defaultReducer = new Reducer(params);
-   return (state, action) => {
-     console.log('ACTION:', action);
-     return defaultReducer(state, action);
-   };
- };
-
- // define this based on the styles/dimensions you use
- const getSceneStyle = (/* NavigationSceneRendererProps */ props, computedProps) => {
-   const style = {
-     flex: 1,
-     backgroundColor: '#fff',
-     shadowColor: null,
-     shadowOffset: null,
-     shadowOpacity: null,
-     shadowRadius: null,
-   };
-   if (computedProps.isActive) {
-     style.marginTop = computedProps.hideNavBar ? 0 : 64;
-     style.marginBottom = computedProps.hideTabBar ? 0 : 50;
-   }
-   return style;
- };
-
-import Error from './Error';
-import EchoView from './EchoView';
+/** 自定义 */
+import { backgroundGrey } from './configs/index.js';
+import { routerReducerCreate } from './redux/reducers/index.js';
+import { LoginView, ModalContainer } from './views/index.js';
 
 class RootView extends Component {
 
@@ -62,12 +29,14 @@ class RootView extends Component {
       <View style={styles.container}>
         <StatusBar
           backgroundColor={statusBackColor} />
-        <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle}>
+
+        <Router createReducer={routerReducerCreate} getSceneStyle={getSceneStyle}>
           <Scene key="modal" component={Modal}>
             <Scene key="root" >
-              <Scene key="echo" clone component={EchoView} getTitle={(navState) => navState.key} />
+              <Scene key="login" component={LoginView} getTitle={(navState) => navState.key} />
             </Scene>
-            <Scene key="error" component={Error} />
+
+            <Scene key="ModalContainer" component={ModalContainer} />
           </Scene>
         </Router>
       </View>
@@ -79,15 +48,26 @@ class RootView extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: lightGrey,
+    backgroundColor: backgroundGrey,
   }
 });
 
-// const fields = ['test1', 'test2'];
-// const validte = (assert, fields) => {
-//   assert('test1', ValidateMethods.required(), 'test1!!!!');
-//   assert('test2', ValidateMethods.required(), 'test2!!!!')
-// }
+// define this based on the styles/dimensions you use
+// 用于路由根据 props，computedProps 来动态改变所需样式
+const getSceneStyle = (/* NavigationSceneRendererProps */ props, computedProps) => {
+  const style = {
+    flex: 1,
+    backgroundColor: '#fff',
+    shadowColor: null,
+    shadowOffset: null,
+    shadowOpacity: null,
+    shadowRadius: null,
+  };
+  // if (computedProps.isActive) {
+  //   style.marginTop = computedProps.hideNavBar ? 0 : 64;
+  //   style.marginBottom = computedProps.hideTabBar ? 0 : 50;
+  // }
+  return style;
+};
 
-// module.exports = RootView;
 module.exports = connect()(RootView)

@@ -7,7 +7,7 @@
 
 
 const log = ({type, ...other}) => {
-  console.log('%c ' + type, 'color:blue', other)
+  console.log('%c Redux action type: ' + type + ' && other -->> ', 'color:blue', other)
 }
 module.exports = store => next => action => {
   log(action)
