@@ -12,6 +12,9 @@
 5. 矢量图标
 	react-native-vector-icons:
 	https://github.com/oblador/react-native-vector-icons
+6. 获取android和ios端的照片和相册
+	react-native-image-picker
+	https://github.com/marcshilling/react-native-image-picker
 
 # 自定义组件:
 
