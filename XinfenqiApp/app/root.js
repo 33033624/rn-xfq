@@ -10,7 +10,7 @@ import { Reducer, Actions, Router, Scene, Modal } from 'react-native-router-flux
 
 /** 自定义 */
 import { backgroundGrey } from './configs/index.js';
-import { routerReducerCreate } from './redux/reducers/index.js';
+import { routerReducerCreate } from './redux/index.js';
 import { LoginView, ModalContainer } from './views/index.js';
 
 class RootView extends Component {

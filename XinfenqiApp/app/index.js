@@ -6,8 +6,8 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { View, StyleSheet, AppState } from 'react-native';
 
-import { configureStore, getStore } from './redux/store/storeConfigure.js';
-import { ProgressView } from './components/custom/index.js';
+import { configureStore, getStore } from './redux/index.js';
+import { ProgressView } from './components/index.js';
 import RootView from './root.js';
 
 

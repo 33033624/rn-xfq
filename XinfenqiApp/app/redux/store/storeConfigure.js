@@ -1,5 +1,4 @@
 /**
- *
  * Created by wuran on 16/12/21.
  */
 
@@ -12,7 +11,7 @@ import promise from './promise.js'
 import track from './track.js'
 
 // reducers
-import test from '../reducers/index.js'
+import { test } from '../reducers/test.js'
 /**
  * configure store params
  */
@@ -33,7 +32,7 @@ let store = null
 export const configureStore = (onComplete) => {
   store = autoRehydrate()(createStoreWithMiddleware)(reducer) // 函数嵌套，自右向左展开
   persistStore(store, {storage: AsyncStorage, blacklist : []}, onComplete )
-  window.store = store;
+  global.store = store;
   return store
 }
 

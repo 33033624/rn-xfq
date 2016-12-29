@@ -8,6 +8,7 @@ export const routerReducerCreate = params => {
    const defaultReducer = new Reducer(params);
    return (state, action) => {
      console.log('%c Router action -->> ','color:cornflowerblue', action);
+     console.log('%c Router State -->> ','color:cornflowerblue', state);
      return defaultReducer(state, action);
    };
  };
